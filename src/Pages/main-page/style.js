@@ -1,30 +1,38 @@
 import styled from "styled-components"
 
+const sideWidth = "250px"
 const navHeight = "70px"
 
-export const Container = styled.div `
+export const Container = styled.div`
 
 width: 100% ;
 height: 100vh ;
-display: flex ;
+display: inline-flex ;
 flex-wrap: wrap ;
-background-color: black ;
+
+
 
 `
 
-
-export const Header = styled.div `
+export const Header = styled.div`
 
 width: 100% ;
-height:navHeight;
-background-color: white ;
-
+height:${navHeight};
 
 `
 
-export const Side = styled.div `
+export const Side = styled.div`
 
-width: 300px ;
-height: calc( 100vh - navHeight) ;
+width: ${sideWidth} ;
+height: calc( 100vh - ${navHeight} ) ;
+background-color: red ;
+
+`
+
+export const Content = styled.div`
+
+width: calc(100% - ${sideWidth}) ;
+height: calc( 100vh - ${navHeight} ) ;
+background-color: green ;
 
 `

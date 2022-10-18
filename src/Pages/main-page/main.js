@@ -1,6 +1,9 @@
 import React from "react";
 
-import { Container, Header } from "./style"
+import NavbarComponent from "../../Components/navbar/navbar";
+import SidebarComponent from "../../Components/sidebar/sidebar";
+
+import { Container, Content, Header, Side } from "./style"
 
 
 
@@ -9,8 +12,14 @@ function MainPage() {
         <>
             <Container>
                 <Header>
-
+                    <NavbarComponent />
                 </Header>
+                <Side>
+                    <SidebarComponent />
+                </Side>
+                <Content>
+
+                </Content>
 
             </Container>
         </>
