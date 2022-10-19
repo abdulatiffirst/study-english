@@ -12,7 +12,7 @@ padding: 0 40px ;
 display: flex ;
 align-items: center ;
 justify-content: space-between ;
-
+background-color: white;
 .logo{
 
     width: 50px ;

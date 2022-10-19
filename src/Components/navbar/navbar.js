@@ -4,9 +4,16 @@ import { Container } from './style'
 
 import logo_img from "../../assets/logos/images.png"
 
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+
+
+
+
 
 function NavbarComponent() {
+
+    const {pathname} = useLocation()
+
     return (
         <>
             <Container>
@@ -16,23 +23,28 @@ function NavbarComponent() {
 
 
                 <ul>
-                    <li>
-                        <Link to={"/vocabulary"}>
+                <li style={{backgroundColor: `${pathname === '/grammar' ? "black": ''}`}}>
+                        <Link style={{color: `${pathname === '/grammar' ? "white" : ''}`}} to={"/grammar"}>
+                           Grammar
+                        </Link>
+                    </li>
+                    <li style={{backgroundColor: `${pathname === '/vocabulary' ? "black": ''}`}}>
+                        <Link style={{color: `${pathname === '/vocabulary' ? "white" : ''}`}} to={"/vocabulary"}>
                             Vocabulary
                         </Link>
                     </li>
-                    <li>
-                        <Link to={"/reading"}>
+                    <li style={{backgroundColor: `${pathname === '/reading' ? "black": ''}`}}>
+                        <Link style={{color: `${pathname === '/reading' ? "white": ''}`}}  to={"/reading"}>
                             Reading
                         </Link>
                     </li>
-                    <li>
-                        <Link to={"/speaking"}>
+                    <li style={{backgroundColor: `${pathname === '/speaking' ? "black": ''}`}}>
+                        <Link style={{color: `${pathname === '/speaking' ? "white": ''}`}} to={"/speaking"}>
                             Speaking
                         </Link>
                     </li>
-                    <li>
-                        <Link to={"/writing"}>
+                    <li style={{backgroundColor: `${pathname === '/writing' ? "black": ''}`}} >
+                        <Link style={{color: `${pathname === '/writing' ? "white": ''}`}}  to={"/writing"}>
                             Writing
                         </Link>
                     </li>
