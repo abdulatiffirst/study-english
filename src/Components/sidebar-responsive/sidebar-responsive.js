@@ -1,17 +1,41 @@
-import React from 'react'
+import React,{useState} from 'react';
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
 import { Link, useLocation} from 'react-router-dom'
-import SidebarResponsive from '../sidebar-responsive/sidebar-responsive'
-import { Container,ContainerResponsive } from './style'
 
+import { SidebarContainerResponsive} from "../sidebar/style"
 
-function SidebarComponent() {
+ function SidebarResponsive() {
+    
+    const [state, setState] = useState({left: false,})
 
-const {pathname} = useLocation()
+    const {pathname} = useLocation()
 
+ //TOGGLE-SIDEBAR
+ const toggleDrawer = (anchor, open) => (event) => {
+    if (
+        event.type === 'keydown' &&
+        (event.key === 'Tab' || event.key === 'Shift')
+    ) {
+        return
+    }
 
-  return (
+    setState({...state, [anchor]: open})
+}
+
+//TOGGLE-SIDEBAR-LIST
+const list = (anchor) => (
     <>
-      <Container>
+        <Box
+            style={{width: '250px', height: '100vh',paddingTop:"60px"}}
+            role="presentation"
+            onClick={toggleDrawer(anchor, false)}
+            onKeyDown={toggleDrawer(anchor, false)}
+        >
+     
+                
+                <SidebarContainerResponsive>
         <ul>
           <li className='title'>
              <h3 >Past Tenses</h3>
@@ -59,12 +83,28 @@ const {pathname} = useLocation()
             <Link to={"/future-perfect-continious"}>Future Perfect Continious</Link>
           </li>
         </ul>
-      </Container>
-      <ContainerResponsive>
-<SidebarResponsive/>
-      </ContainerResponsive>
+      </SidebarContainerResponsive>
+            
+        </Box>
     </>
-  )
+)
+
+  return (
+    <div>
+      {['left'].map((anchor) => (
+        <React.Fragment key={anchor}>
+          <Button style={{backgroundColor:"white",}} onClick={toggleDrawer(anchor, true)}>Open</Button>
+          <Drawer
+            anchor={anchor}
+            open={state[anchor]}
+            onClose={toggleDrawer(anchor, false)}
+          >
+            {list(anchor)}
+          </Drawer>
+        </React.Fragment>
+      ))}
+    </div>
+  );
 }
 
-export default SidebarComponent
+export default SidebarResponsive

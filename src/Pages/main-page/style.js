@@ -1,17 +1,10 @@
 import styled from "styled-components"
 
-const sideWidth = "250px"
 const navHeight = "70px"
 
 export const Container = styled.div`
 
 width: 100% ;
-height: 100vh ;
-display: inline-flex ;
-flex-wrap: wrap ;
-
-
-
 `
 
 export const Header = styled.div`
@@ -22,20 +15,10 @@ position: sticky;
 z-index: 9999;
 top: 0;
 left: 0;
-`
 
-export const Side = styled.div`
-
-width: ${sideWidth} ;
-height: calc( 100vh - ${navHeight} ) ;
-background-color: red ;
+@media screen and (max-width: 1000px) {
+    height: 60px;
+}
 
 `
 
-export const Content = styled.div`
-
-width: calc(100% - ${sideWidth}) ;
-height: calc( 100vh - ${navHeight} ) ;
-background-color: green ;
-
-`
