@@ -13,6 +13,7 @@ import { Route, Routes } from "react-router-dom";
 
 import { Container,  Header } from "./style"
 import GrammarPage from "../grammar-page/grammar";
+import PastSimple from "../../Grammars/past-simple/past-simple";
 
 
 function MainPage() {
@@ -21,10 +22,12 @@ function MainPage() {
             <Container>
                 <Header>
                     <NavbarComponent />
-                </Header>
+                </Header>  
                 <Routes>
-                    <Route exact path={"/"} element={<HomePage />} />
-                    <Route path={"/grammar"} element={<GrammarPage/>} />
+                    <Route  path={"/"} element={<HomePage />} />
+                    <Route path={"grammar"} element={<GrammarPage/>} >
+                        <Route index path={"past-simple"} element={<PastSimple/>}/>
+                    </Route>
                     <Route path={"/vocabulary"} element={<VocabularyPage />} />
                     <Route path={"/reading"} element={<ReadingPage />} />
                     <Route path={"/speaking"} element={<SpeakingPage />} />

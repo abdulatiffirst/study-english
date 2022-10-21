@@ -1,4 +1,5 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 import SidebarComponent from '../../Components/sidebar/sidebar'
 
@@ -11,9 +12,7 @@ function GrammarPage() {
                 <Side>
                     <SidebarComponent />
                 </Side>
-                <Content>
-                        
-                </Content>
+                <Outlet/>
             </Container>
         </>
     )

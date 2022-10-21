@@ -2,7 +2,7 @@ import React from 'react'
 
 function PastSimple() {
   return (
-    <div>PastSimple</div>
+    <div>sadr5rftgyuhijkofreufhberwubfuyerwfuwebrbfyuerwibfyuebwifbuwerufbiuweiubfbfebiufbyfewbfbwbibfrbyibyr</div>
   )
 }
 
