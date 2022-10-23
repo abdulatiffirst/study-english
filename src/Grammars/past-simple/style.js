@@ -11,6 +11,7 @@ background-color: #1E1E1E;
 display: inline-block;
 overflow: auto;
 text-align: start;
+padding: 10px 0 20px 0;
 `
 
 export const Title = styled.div`
