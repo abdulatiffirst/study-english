@@ -11,7 +11,7 @@ import SpeakingPage from "../speaking-page/speaking";
 
 import { Route, Routes } from "react-router-dom";
 
-import { Container,  Header } from "./style"
+import { Container, Header } from "./style"
 import GrammarPage from "../grammar-page/grammar";
 import PastSimple from "../../Grammars/past-simple/past-simple";
 
@@ -22,16 +22,18 @@ function MainPage() {
             <Container>
                 <Header>
                     <NavbarComponent />
-                </Header>  
+                </Header>
                 <Routes>
-                    <Route  path={"/"} element={<HomePage />} />
-                    <Route path={"grammar"} element={<GrammarPage/>} >
-                        <Route index path={"past-simple"} element={<PastSimple/>}/>
+                    <Route index element={<HomePage />} />
+                    <Route path={"grammar"} element={<GrammarPage />} >
+                        <Route index element={<PastSimple />} />
+                        <Route  path={"past-continious"} element={<HomePage/>} />
                     </Route>
-                    <Route path={"/vocabulary"} element={<VocabularyPage />} />
-                    <Route path={"/reading"} element={<ReadingPage />} />
-                    <Route path={"/speaking"} element={<SpeakingPage />} />
-                    <Route path={"/writing"} element={<WritingPage />} />
+                    <Route path={"vocabulary"} element={<VocabularyPage />} />
+                    <Route path={"reading"} element={<ReadingPage />} />
+                    <Route path={"speaking"} element={<SpeakingPage />} />
+                    <Route path={"writing"} element={<WritingPage />} />
+                    <Route path={"*"} element={<p>What The Fack Is It</p>} />
                 </Routes>
 
             </Container>

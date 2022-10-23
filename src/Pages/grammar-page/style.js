@@ -1,9 +1,10 @@
 import styled from "styled-components"
 
-const sideWidth = "250px"
+const sideWidth = "300px"
 
 export const Container = styled.div`
 width: 100% ;
+
 height: calc(100vh - 70px ) ;
 display: flex;
 @media screen and (max-width:1000px) {
@@ -30,9 +31,9 @@ height:  100%;
 `
 
 export const Content = styled.div`
-
 width: calc(100% - ${sideWidth}) ;
 height: 100% ;
+overflow: hidden;
 background-color: green ;
 @media screen and (max-width:1000px) {
     width: 100%;

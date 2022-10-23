@@ -12,7 +12,9 @@ function GrammarPage() {
                 <Side>
                     <SidebarComponent />
                 </Side>
-                <Outlet/>
+                <Content>
+                    <Outlet/>
+                </Content>
             </Container>
         </>
     )

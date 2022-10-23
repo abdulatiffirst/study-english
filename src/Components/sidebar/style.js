@@ -33,14 +33,14 @@ transition: .6s;
         h3{
             color: lightgray;
             font-weight: 300;
-            font-size: 15px;
+            font-size: 17px;
             margin: 5px 0;
             padding: 8px 10px;
             border-bottom: 1px solid gray;
         }
         a{
             color: white;
-            font-size: 17px;
+            font-size: 20px;
             padding-left: 15px;
         }
     }
