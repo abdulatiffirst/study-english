@@ -25,7 +25,7 @@ height:  100%;
     height: fit-content;
     position: absolute;
     left: 10px;
-    top: 75px;
+    top: 55px;
 
 }
 `

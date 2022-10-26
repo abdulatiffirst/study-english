@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import RobotoBold from "../../assets/fonts/roboto/Roboto-Bold.ttf"
+import { devicesMax } from "../../Materials/responsive/responsive";
 
 const bgColor = "#010101"
 const borderRadius = "6px"
@@ -36,6 +37,12 @@ font-size: 33px;
 font-family: roboto;
 padding-left: 30px;
 
+@media screen and (${devicesMax.tablet}) {
+       font-size: 25px;
+       padding:  5px ;
+       height: auto;
+    }
+
 `
 
 export const Description = styled.div`
@@ -61,6 +68,10 @@ p{
     padding: 8px 15px;
     font-size: 22px;
     border-radius: ${borderRadius};
+    @media screen and (${devicesMax.tablet}) {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
 }
 li{
     margin: 10px 5px;
