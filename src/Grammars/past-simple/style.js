@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
-const bgColor = "#171717"
+import RobotoBold from "../../assets/fonts/roboto/Roboto-Bold.ttf"
+
+const bgColor = "#010101"
 const borderRadius = "6px"
+
+
+
 
 
 export const Container = styled.div`
 width: 100%;
 height: 100%;
-background-color: #1E1E1E;
+background-color: white;
 display: inline-block;
 overflow: auto;
 text-align: start;
@@ -15,6 +20,10 @@ padding: 10px 0 20px 0;
 `
 
 export const Title = styled.div`
+@font-face {
+    font-family:roboto ;
+    src: url(${RobotoBold});
+}
 width: 90%;
 height: 55px;
 background-color:${bgColor} ;
@@ -24,6 +33,7 @@ border-radius: ${borderRadius};
 display: flex;
 align-items: center;
 font-size: 33px;
+font-family: roboto;
 padding-left: 30px;
 
 `
@@ -31,12 +41,13 @@ padding-left: 30px;
 export const Description = styled.div`
 width: 90%;
 height: fit-content;
-background-color: ${bgColor};
+background-color: white;
 margin: auto;
 border-radius: ${borderRadius};
 padding: 10px;
-color: white;
+color: #010101;
 font-size: 20px;
+border: 1px solid gray;
 p{
     margin: 10px 0;
 }
@@ -46,11 +57,12 @@ p{
 .formula{
     width: 100%;
     background-color: black;
-    padding: 5px 10px;
-    font-size: 23px;
+    color: white;
+    padding: 8px 15px;
+    font-size: 22px;
     border-radius: ${borderRadius};
 }
 li{
-    margin: 10px 0;
+    margin: 10px 5px;
 }
 `

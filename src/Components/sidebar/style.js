@@ -5,7 +5,7 @@ width: 100%;
 height: 100%;
 display: flex;
 justify-content: center;
-background-color: black;
+background-color: #010101;
 padding: 15px 0;
 color: white;
 

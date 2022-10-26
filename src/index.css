@@ -1,12 +1,12 @@
 
 @font-face {
-  font-family:pt ;
-  src: url("./assets/fonts/PT_Mono/PTMono-Regular.ttf");
+  font-family:comforta ;
+  src: url("./assets/fonts/comforta/Comfortaa-VariableFont_wght.ttf");
 }
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: comforta;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

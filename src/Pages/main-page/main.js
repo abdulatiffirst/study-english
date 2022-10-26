@@ -26,14 +26,14 @@ function MainPage() {
                 <Routes>
                     <Route index element={<HomePage />} />
                     <Route path={"grammar"} element={<GrammarPage />} >
-                        <Route index element={<PastSimple />} />
+                        <Route path={"past-simple"} element={<PastSimple />} />
                         <Route  path={"past-continious"} element={<HomePage/>} />
                     </Route>
                     <Route path={"vocabulary"} element={<VocabularyPage />} />
                     <Route path={"reading"} element={<ReadingPage />} />
                     <Route path={"speaking"} element={<SpeakingPage />} />
                     <Route path={"writing"} element={<WritingPage />} />
-                    <Route path={"*"} element={<p>What The Fack Is It</p>} />
+                    <Route path={"*"} element={<p>What The Fuck Is It</p>} />
                 </Routes>
 
             </Container>
