@@ -52,7 +52,7 @@ ul{
     font-weight: 300;
     background-color: black;
     color: white;
-    padding: 3px 10px ;
+    padding: 5px 10px ;
     border-radius: 3px;
     
 }
