@@ -45,7 +45,7 @@ function PastSimple() {
         <li>Who discovered penicillin?</li>
         <li>Who wrote Don Quixote?</li>
         <p className='title'>We use didn't (did not) to make negatives with the past simple</p>
-        <h3 className='formula'>Formula:Subject + Did not + Verb<sup>1</sup> + Object.</h3>
+        <h3 className='formula'>Formula: Subject + Did not + Verb<sup>1</sup> + Object.</h3>
         <li>They <b>didn't go</b> to Spain this year</li>
         <li>We <b>didn't get</b> home until very late last night.</li>
         <li>I <b>didn't see</b> you yesterday. </li>

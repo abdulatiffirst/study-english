@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { devicesMax, devicesMin } from "../../Materials/responsive/responsive";
+
 export const Container = styled.div`
 width: 100%;
 height: 100%;
@@ -9,7 +11,7 @@ background-color: #010101;
 padding: 15px 0;
 color: white;
 
-@media screen and (max-width:1000px) {
+@media screen and (${devicesMax.to}) {
      display: none;
 }
 ul{
@@ -48,7 +50,7 @@ transition: .6s;
 `
 
 export const ContainerResponsive = styled.div`
-@media (min-width:1000px) and (max-width:2000px) {
+@media (${devicesMin.to}) and (${devicesMax.desktop}) {
      display: none;
 }
 `

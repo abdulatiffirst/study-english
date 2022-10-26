@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devicesMax, devicesMin } from "../../Materials/responsive/responsive";
 
 
 
@@ -13,19 +14,27 @@ display: flex ;
 align-items: center ;
 justify-content: space-between ;
 background-color: white;
+
 .logo{
 
     width: 50px ;
     height: 50px ;
+  
 
 }
+.links{
+    @media screen and (${devicesMax.tablet}) {
+        display: none;
+    }
+}
+
 ul{
 
     display: flex ;
     gap: 30px ;
     list-style: none ;
     height: fit-content ;
-
+    
     li{
     padding: 4px 8px ;
     border-radius: 3px ;
@@ -39,13 +48,22 @@ ul{
     color: white;
  }
  a{
+    
     color: black;
     font-size: 18px;
     transition: .6s;
+    @media (${devicesMin.tablet}) and (${devicesMax.laptop}) {
+        font-size: 17px;
+    }
+    
 }
 }
 }
-
+.openBtn{
+    @media (${devicesMin.tablet}) and (${devicesMax.desktop}) {
+        display: none;
+    }
+}
 
 .slogan{
     font-size: 30px;
@@ -54,8 +72,45 @@ ul{
     color: white;
     padding: 5px 10px ;
     border-radius: 3px;
-    
+    @media (${devicesMin.tablet}) and (${devicesMax.laptop}) {
+        font-size: 20px;
+    }
+    @media screen and (${devicesMax.tablet}) {
+        display: none;
+    }
 }
 
 
+`
+
+export const LinksResponsive = styled.ul`
+
+   
+    list-style: none ;
+    height: fit-content ;
+    
+    li{
+    padding: 4px 8px ;
+    border-radius: 3px ;
+    transition: .6s ;
+    margin: 4px 0;
+    &:hover{
+
+    background-color: black ;
+  
+   }
+ &:hover a{
+    color: white;
+ }
+ a{
+    
+    color: black;
+    font-size: 18px;
+    transition: .6s;
+    @media (${devicesMin.tablet}) and (${devicesMax.laptop}) {
+        font-size: 15px;
+    }
+    
+}
+}
 `
