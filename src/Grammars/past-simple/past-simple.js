@@ -30,21 +30,21 @@ function PastSimple() {
         <li>I <b>lived</b> abroad for ten years</li>
         <li>He <b>enjoyed</b> being a student.</li>
         <li>She <b>played</b> a lot of tennis when she was younger.</li>
-        <p className='title'>We often use expressions with ago with the past simple:</p>
+        <p className='title'>4) We often use expressions with ago with the past simple:</p>
         <li>I <b>met</b> my wife a long time ago.</li>
       </Description>
       <Title>Past simple questions and negatives</Title>
       <Description>
-        <p className='title'>We use did to make questions with the past simple</p>
+        <p className='title'>1) We use did to make questions with the past simple</p>
         <h4 className='formula'>Formula: Did + Subject + Verb<sup>1</sup> + Object ?</h4>
         <li><b>Did</b> she <b>play</b> tennis when she was younger?</li>
         <li><b>Did</b> you <b>live</b> abroad?</li>
         <li>When <b>did</b> you <b>meet</b>  your wife?</li>
         <li>Where <b>did</b> you <b>go</b> for your holidays?</li>
-        <p className='title'>But questions with who often don't use did</p>
+        <p className='title'>2) But questions with who often don't use did</p>
         <li>Who discovered penicillin?</li>
         <li>Who wrote Don Quixote?</li>
-        <p className='title'>We use didn't (did not) to make negatives with the past simple</p>
+        <p className='title'>3) We use didn't (did not) to make negatives with the past simple</p>
         <h3 className='formula'>Formula: Subject + Did not + Verb<sup>1</sup> + Object.</h3>
         <li>They <b>didn't go</b> to Spain this year</li>
         <li>We <b>didn't get</b> home until very late last night.</li>

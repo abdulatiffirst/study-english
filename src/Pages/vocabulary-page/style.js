@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { devicesMax } from "../../Materials/responsive/responsive";
+
 
 export const Container = styled.div`
 width: 100% ;
@@ -10,4 +12,9 @@ justify-content: center ;
 font-family: cursive ;
 font-size: 60px ;
 color: white ;
+
+@media screen and (${devicesMax.tablet}) {
+        font-size: 25px;
+       
+    }
 `

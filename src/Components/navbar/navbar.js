@@ -10,29 +10,24 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
-const options = [
-    'None',
-    'Atria',
-    'Callisto',
-    'Dione',
-    'Ganymede',
-    'Hangouts Call',
-    'Luna',
-    'Oberon',
-    'Phobos',
-    'Pyxis',
-    'Sedna',
-    'Titania',
-    'Triton',
-    'Umbriel',
-];
 
 
 const ITEM_HEIGHT = 48;
 
 function NavbarComponent() {
 
-    const { pathname } = useLocation()
+    const location = useLocation()
+
+    const pathname = location.pathname
+
+    const a = pathname.startsWith("/grammar")
+
+    console.log('====================================');
+    console.log(a);
+    console.log('====================================');
+
+
+   
     //MENU
 
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -52,8 +47,8 @@ function NavbarComponent() {
 
 
                 <ul className='links'>
-                    <li style={{ backgroundColor: `${pathname === '/grammar' ? "black" : ''}` }}>
-                        <Link style={{ color: `${pathname === '/grammar' ? "white" : ''}` }} to={"/grammar"}>
+                    <li style={{ backgroundColor: `${a === true ? "black" : ''}` }}>
+                        <Link style={{ color: `${a === true ? "white" : ''}` }} to={"/grammar"}>
                             Grammar
                         </Link>
                     </li>
