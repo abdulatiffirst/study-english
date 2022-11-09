@@ -20,7 +20,7 @@ position: relative;
     h1{
 color: white;
 font-family: roboto;
-font-size: 42px;
+font-size: 38px;
 border: 1px solid white ;
 padding: 15px 20px ;
 border-radius: 5px;
@@ -44,7 +44,7 @@ span{
        right: 50px;
         font-size: 25px;
         color: white;
-        text-shadow: 10px 10px 50px white;
+        text-shadow: 10px 10px 40px white;
     }
     .text-3{
         position: absolute;
@@ -52,16 +52,16 @@ span{
        right: 500px;
         font-size: 25px;
         color: white;
-        text-shadow: 10px 10px 60px white;
+        text-shadow: 10px 10px 50px white;
     }
     
     .text-4{
         position: absolute;
-        bottom: 310px;
+        top: 150px;
        left: 300px;
         font-size: 40px;
         color: white;
-        text-shadow: 0 10px 70px white;
+        text-shadow: 0 0 20px white;
     }
     .text-5{
         position: absolute;
@@ -69,7 +69,7 @@ span{
        right: 600px;
         font-size: 30px;
         color: white;
-        text-shadow: 10px 10px 80px white;
+        text-shadow: 10px 10px 60px white;
     }
     .text-6{
         position: absolute;
@@ -77,7 +77,7 @@ span{
        right: 200px;
         font-size: 30px;
         color: white;
-        text-shadow: 10px 10px 90px white;
+        text-shadow: 10px 10px 30px white;
     }
     .text-7{
         position: absolute;
@@ -85,7 +85,7 @@ span{
        left: 100px;
         font-size: 30px;
         color: white;
-        text-shadow: 10px 10px 100px white;
+        text-shadow: 10px 10px 20px white;
     }
     .text-8{
         position: absolute;
@@ -93,7 +93,7 @@ span{
        left: 400px;
         font-size: 30px;
         color: white;
-        text-shadow: 0 0 40px white;
+        text-shadow: 0 0 30px white;
     }
     
 }

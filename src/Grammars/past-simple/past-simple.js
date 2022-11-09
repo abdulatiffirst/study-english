@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Container, Description, Title } from './style'
+import { Container, Description, Title } from '../style/style'
 
 function PastSimple() {
   return (

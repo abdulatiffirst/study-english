@@ -14,7 +14,7 @@ function HomePage() {
           <div className='text-6'>Why ?</div>
           <div className='text-7'>Must</div>
           <div className='text-8'>If</div>
-          <h1>Learn <b>English</b>   with <span>Unknown</span> </h1>
+          <h1>Learn <b>English</b>   with <span>Unknown Teacher</span> </h1>
         </div>
 
       </Container>

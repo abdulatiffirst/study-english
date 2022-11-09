@@ -14,6 +14,7 @@ import { Route, Routes } from "react-router-dom";
 import { Container, Header } from "./style"
 import GrammarPage from "../grammar-page/grammar";
 import PastSimple from "../../Grammars/past-simple/past-simple";
+import GrammarsHome from "../../Grammars/grammars-home/grammars-home";
 
 
 function MainPage() {
@@ -26,6 +27,7 @@ function MainPage() {
                 <Routes>
                     <Route index element={<HomePage />} />
                     <Route path={"grammar"} element={<GrammarPage />} >
+                        <Route index element={<GrammarsHome/> }/>
                         <Route path={"past-simple"} element={<PastSimple />} />
                         <Route  path={"past-continious"} element={<HomePage/>} />
                     </Route>
