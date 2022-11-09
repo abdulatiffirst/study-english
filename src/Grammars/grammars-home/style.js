@@ -29,6 +29,7 @@ img{
 }
 li{
     margin: 5px 10px;
+    list-style: none;
 }
 
 `

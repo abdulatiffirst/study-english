@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import RobotoBold from "../../assets/fonts/roboto/Roboto-Bold.ttf"
+import { devicesMax} from "../../Materials/responsive/responsive";
+
 export const Container = styled.div`
 width: 100%;
 height: calc(100vh - 70px ) ;
@@ -16,7 +18,11 @@ overflow: auto;
     align-items: center;
 background-color: black;
 position: relative;
-
+div{
+@media screen and (${devicesMax.laptop}) {
+    display: none;
+}
+}
     h1{
 color: white;
 font-family: roboto;
@@ -24,6 +30,12 @@ font-size: 38px;
 border: 1px solid white ;
 padding: 15px 20px ;
 border-radius: 5px;
+@media screen and (${devicesMax.tablet}) {
+    padding: 5px 10px;
+    border: none;
+    width: 90%;
+    text-align: left;
+}
 span{
     
     text-shadow: 10px 10px 10px #202124;
