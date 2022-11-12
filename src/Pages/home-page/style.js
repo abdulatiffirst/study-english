@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import RobotoBold from "../../assets/fonts/roboto/Roboto-Bold.ttf"
-import { devicesMax} from "../../Materials/responsive/responsive";
+import { devicesMax } from "../../Materials/responsive/responsive";
 
 export const Container = styled.div`
 width: 100%;
@@ -21,7 +21,9 @@ position: relative;
 div{
 @media screen and (${devicesMax.laptop}) {
     display: none;
+ 
 }
+
 }
     h1{
 color: white;
@@ -39,73 +41,163 @@ border-radius: 5px;
 span{
     
     text-shadow: 10px 10px 10px #202124;
-}
     }
-
-    .text{
+    }
+.anime{
         position: absolute;
+        color: white;
+        animation: anime 0.6s infinite ease-in-out alternate;
+    @keyframes anime {
+        from{
+            transform: translateY(1px) scale(1.01);
+        }
+        to{
+            transform: translateY(-1px) scale(1.06);
+        }
+    }
+}
+    .text{
         bottom: 40px;
         left: 80px;
         font-size: 25px;
-        color: white;
         text-shadow: 10px 10px 40px white;
     }
     .text-2{
-        position: absolute;
         top: 60px;
        right: 50px;
         font-size: 25px;
-        color: white;
         text-shadow: 10px 10px 40px white;
+        animation-delay: .1s;
+
     }
     .text-3{
-        position: absolute;
         bottom: 100px;
        right: 500px;
         font-size: 25px;
-        color: white;
         text-shadow: 10px 10px 50px white;
+        animation-delay: .2s;
+
     }
     
     .text-4{
-        position: absolute;
         top: 150px;
        left: 300px;
         font-size: 40px;
-        color: white;
         text-shadow: 0 0 20px white;
+        animation-delay: .3s;
+
     }
     .text-5{
-        position: absolute;
-        bottom: 400px;
+       bottom: 400px;
        right: 600px;
-        font-size: 30px;
-        color: white;
-        text-shadow: 10px 10px 60px white;
+       font-size: 30px;
+       text-shadow: 10px 10px 60px white;
+       animation-delay: .4s;
+
     }
     .text-6{
-        position: absolute;
         bottom: 200px;
        right: 200px;
         font-size: 30px;
-        color: white;
         text-shadow: 10px 10px 30px white;
+        animation-delay: .5s;
+
     }
     .text-7{
-        position: absolute;
        top: 80px;
        left: 100px;
         font-size: 30px;
-        color: white;
         text-shadow: 10px 10px 20px white;
+        animation-delay: .6s;
+
     }
     .text-8{
-        position: absolute;
        bottom: 100px;
        left: 400px;
         font-size: 30px;
-        color: white;
         text-shadow: 0 0 30px white;
+        animation-delay: .7s;
+
+    }
+    .text-9{
+       bottom: 250px;
+       left: 50px;
+        font-size: 30px;
+        text-shadow: 0 0 30px white;
+        animation-delay: .8s;
+
+    }
+    .text-10{
+       top: 50px;
+       left: 500px;
+        font-size: 30px;
+        text-shadow: 0 0 30px white;
+        animation-delay: .9s;
+
+    }
+    .text-11{
+       top: 50px;
+       right: 400px;
+        font-size: 30px;
+        text-shadow: 0 0 30px white;
+        animation-delay: 1s;
+
+    }
+    .text-12{
+       top: 150px;
+       right: 250px;
+        font-size: 30px;
+        text-shadow: 0 0 30px white;
+        animation-delay: .1s;
+
+    }
+    .text-13{
+       bottom: 80px;
+       right: 100px;
+        font-size: 30px;
+        text-shadow: 0 0 30px white;
+        animation-delay: .2s;
+
+    }
+    .text-14{
+       bottom: 50px;
+       left: 500px;
+        font-size: 25px;
+        text-shadow: 0 0 30px white;
+        animation-delay: .3s;
+
+    }
+    .text-15{
+       bottom: 150px;
+       left: 180px;
+        font-size: 25px;
+        text-shadow: 0 0 30px white;
+        animation-delay: .4s;
+
+    }
+    .text-16{
+       bottom: 300px;
+       right: 120px;
+        font-size: 30px;
+        text-shadow: 0 0 30px white;
+        animation-delay: .5s;
+
+    }
+    .text-17{
+       top: 150px;
+       left: 450px;
+        font-size: 30px;
+        text-shadow: 0 0 30px white;
+        animation-delay: .6s;
+
+    }
+    .text-18{
+       bottom: 150px;
+       left: 550px;
+        font-size: 27px;
+        text-shadow: 0 0 30px white;
+        animation-delay: .7s;
+
     }
     
 }

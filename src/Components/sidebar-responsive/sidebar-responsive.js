@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+
 import { Link, useLocation } from 'react-router-dom'
 
 import { SidebarContainerResponsive } from "../sidebar/style"
@@ -93,7 +95,7 @@ function SidebarResponsive() {
     <div>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button style={{ backgroundColor: "white", }} onClick={toggleDrawer(anchor, true)}>Open</Button>
+          <Button style={{ backgroundColor: "white",color:"black" }} onClick={toggleDrawer(anchor, true)}><MenuOpenIcon/></Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}
