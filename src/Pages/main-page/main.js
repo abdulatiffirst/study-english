@@ -29,7 +29,7 @@ function MainPage() {
                     <Route path={"grammar"} element={<GrammarPage />} >
                         <Route index element={<GrammarsHome/> }/>
                         <Route path={"past-simple"} element={<PastSimple />} />
-                        <Route  path={"past-continious"} element={<HomePage/>} />
+                        <Route  path={"past-continious"} element={<h1>Past continious</h1>} />
                     </Route>
                     <Route path={"vocabulary"} element={<VocabularyPage />} />
                     <Route path={"reading"} element={<ReadingPage />} />

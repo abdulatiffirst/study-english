@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
-// import { Container } from './style'
+import React from 'react'
+import { Container } from './style'
 
 function ReadingPage() {
 
   return (
     <>
-      {/* <Container>
+      <Container>
         <h1>Coming Soon !</h1>
-    </Container> */}
+      </Container>
 
-      
+
     </>
   )
 }
