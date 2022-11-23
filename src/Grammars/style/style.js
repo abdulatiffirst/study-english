@@ -95,6 +95,9 @@ h2{
     width: 100%;
     border-bottom: 1px solid gray;
     padding-bottom: 5px;
+    @media screen and (${devicesMax.tablet}) {
+            font-size: 20px;
+        }
 }
 .questions{
     width: 100%;
@@ -107,12 +110,19 @@ h2{
         align-items: center;
         
         font-size: 22px;
+        @media screen and (${devicesMax.tablet}) {
+            width: 50%;
+            font-size: 18px;
+        }
     }
     .answer{
         width: 40%;
         display: flex;
         flex-direction: column;
         gap: 5px ;
+        @media screen and (${devicesMax.tablet}) {
+            width: 50%;
+        }
         button{
             background-color: black;
             color: white;
