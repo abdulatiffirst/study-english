@@ -14,7 +14,7 @@ function PastSimple() {
     {
       questionText: "Who are you ?",
       answerOptions: [
-        { answerText: "Me", isCorrect: true },
+        { answerText: "correct", isCorrect: true },
         { answerText: "You", isCorrect: false },
         { answerText: "We", isCorrect: false },
         { answerText: "They", isCorrect: false },
@@ -26,7 +26,7 @@ function PastSimple() {
       answerOptions: [
         { answerText: "Mwe", isCorrect: false },
         { answerText: "Ywou", isCorrect: false },
-        { answerText: "Wwe", isCorrect: false },
+        { answerText: "correct", isCorrect: true },
         { answerText: "Twhey", isCorrect: false },
       ]
 
@@ -37,7 +37,7 @@ function PastSimple() {
         { answerText: "Mee", isCorrect: false },
         { answerText: "Yeou", isCorrect: false },
         { answerText: "Wee", isCorrect: false },
-        { answerText: "Tehey", isCorrect: false },
+        { answerText: "correct", isCorrect: true },
       ]
 
     },
@@ -45,7 +45,7 @@ function PastSimple() {
       questionText: "Who asddasdu ?",
       answerOptions: [
         { answerText: "Mre", isCorrect: false },
-        { answerText: "Yrou", isCorrect: false },
+        { answerText: "correct", isCorrect: true },
         { answerText: "Wre", isCorrect: false },
         { answerText: "Trhey", isCorrect: false },
       ]
