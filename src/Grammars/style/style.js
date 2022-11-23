@@ -77,3 +77,50 @@ li{
     margin: 10px 5px;
 }
 `
+
+export const Test = styled.div`
+width:90%;
+margin:20px  auto;
+color: white;
+background-color: ${bgColor};
+border-radius: ${borderRadius};
+padding: 15px;
+.score{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+   
+}
+h2{
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+.questions{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 5px ;
+    .question{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        
+        font-size: 22px;
+    }
+    .answer{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px ;
+        button{
+            background-color: black;
+            color: white;
+            border: 1px solid gray;
+            padding: 5px;
+            border-radius: ${borderRadius};
+            font-size: 15px;
+        }
+    }
+}
+`
