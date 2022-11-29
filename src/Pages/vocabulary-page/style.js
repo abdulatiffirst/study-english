@@ -9,7 +9,6 @@ background-color: black ;
 display: flex ;
 align-items: center ;
 justify-content: center ;
-font-family: cursive ;
 font-size: 60px ;
 color: white ;
 

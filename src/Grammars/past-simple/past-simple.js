@@ -12,22 +12,22 @@ function PastSimple() {
   const [score, setScore] = useState(0)
   const questions = [
     {
-      questionText: "Who are you ?",
+      questionText: "I ____ to school yesterday",
       answerOptions: [
-        { answerText: "correct", isCorrect: true },
-        { answerText: "You", isCorrect: false },
-        { answerText: "We", isCorrect: false },
-        { answerText: "They", isCorrect: false },
+        { answerText: "went", isCorrect: true },
+        { answerText: "goed", isCorrect: false },
+        { answerText: "gone", isCorrect: false },
+        { answerText: "wented", isCorrect: false },
       ]
 
     },
     {
-      questionText: "Who we are ?",
+      questionText: "He ____ a doctor year ago",
       answerOptions: [
-        { answerText: "Mwe", isCorrect: false },
-        { answerText: "Ywou", isCorrect: false },
-        { answerText: "correct", isCorrect: true },
-        { answerText: "Twhey", isCorrect: false },
+        { answerText: "were", isCorrect: false },
+        { answerText: "did", isCorrect: false },
+        { answerText: "was", isCorrect: true },
+        { answerText: "is", isCorrect: false },
       ]
 
     },
