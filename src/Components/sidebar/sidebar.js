@@ -9,6 +9,7 @@ function SidebarComponent() {
   const { pathname } = useLocation()
 
 
+
   return (
     <>
       <Container>
@@ -16,7 +17,7 @@ function SidebarComponent() {
           <li className='title'>
             <h3 >Past Tenses</h3>
           </li>
-          <li style={{ backgroundColor: `${pathname === '/grammar/past-simple' ? "rgba(219, 218, 215,.03)" : ''}` }}>
+          <li  style={{ backgroundColor: `${pathname === '/grammar/past-simple' ? "rgba(219, 218, 215,.03)" : ''}` }}>
             <Link to={"/grammar/past-simple"}>Past Simple</Link>
           </li>
           <li style={{ backgroundColor: `${pathname === '/grammar/past-continious' ? "rgba(219, 218, 215,.03)" : ''}` }}>

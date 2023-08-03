@@ -14,12 +14,16 @@ display: flex ;
 align-items: center ;
 justify-content: space-between ;
 background-color: white;
-
+.logo-border{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
 .logo{
-
-    width: 50px ;
-    height: 50px ;
-  
+width: 250px;
 
 }
 .links{

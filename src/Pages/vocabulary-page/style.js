@@ -13,7 +13,7 @@ font-size: 60px ;
 color: white ;
 
 @media screen and (${devicesMax.tablet}) {
-        font-size: 25px;
+        font-size: 22px;
        
     }
 `

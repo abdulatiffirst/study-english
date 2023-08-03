@@ -95,7 +95,7 @@ function SidebarResponsive() {
     <div>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button style={{ backgroundColor: "white",color:"black" }} onClick={toggleDrawer(anchor, true)}><MenuOpenIcon/></Button>
+          <Button style={{ backgroundColor: "white",color:"black",boxShadow:"0px 0 10px grey",top:"14px", }} onClick={toggleDrawer(anchor, true)}><MenuOpenIcon/></Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}

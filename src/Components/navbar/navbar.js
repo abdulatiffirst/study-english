@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Container, LinksResponsive } from './style'
 
-import logo_img from "../../assets/logos/images.png"
+import logo_img from "../../assets/logos/Lerni . (1).png"
 
 import { Link, useLocation } from 'react-router-dom'
 
@@ -41,7 +41,7 @@ function NavbarComponent() {
     return (
         <>
             <Container>
-                <Link to={"/"}>
+                <Link className='logo-border' to={"/"}>
                     <img src={logo_img} className='logo' alt="llllasdsad" />
                 </Link>
 

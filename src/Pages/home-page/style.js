@@ -21,7 +21,7 @@ position: relative;
 div{
 @media screen and (${devicesMax.laptop}) {
     display: none;
- 
+    
 }
 
 }
