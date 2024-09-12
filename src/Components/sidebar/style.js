@@ -5,10 +5,11 @@ import { devicesMax, devicesMin } from "../../Materials/responsive/responsive";
 export const Container = styled.div`
   width: 100%;
   height: 100%;
- 
-  background-color: #010101;
+
   padding: 15px 0;
   color: white;
+  background-color: #1e2359;
+  opacity: 75%;
 
   @media screen and (${devicesMax.to}) {
     display: none;
@@ -22,11 +23,11 @@ export const Container = styled.div`
     }
     li {
       transition: 0.6s;
-      margin-top: 10px ;
-      padding: 5px  0;
+      margin-top: 10px;
+      padding: 5px 0;
       &:hover {
-          background-color: rgba(219, 218, 215, 0.03);
-        }
+        background-color: rgba(219, 218, 215, 0.03);
+      }
       h3 {
         color: lightgray;
         font-weight: 300;
@@ -39,7 +40,7 @@ export const Container = styled.div`
         width: 2000000px;
         color: white;
         font-size: 20px;
-       padding-left: 20px;
+        padding-left: 20px;
       }
     }
   }
@@ -55,7 +56,8 @@ export const SidebarContainerResponsive = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: #1e2359;
+  opacity: 75%;
   padding: 15px 0;
   color: white;
 
@@ -63,14 +65,12 @@ export const SidebarContainerResponsive = styled.div`
     width: 100%;
     height: 100%;
     overflow: auto;
-    
-    
+
     li {
       text-align: start;
       padding: 5px 0;
       transition: 0.6s;
 
-    
       h3 {
         color: lightgray;
         font-weight: 300;

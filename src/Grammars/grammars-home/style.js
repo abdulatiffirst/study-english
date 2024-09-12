@@ -5,7 +5,9 @@ width: 100%;
 height: 100%;
 padding: 20px 0;
 overflow: auto;
-background-color: white;
+color: white;
+/* background-color: white; */
+
 h5{
     width: 90%;
     margin:10px  auto;

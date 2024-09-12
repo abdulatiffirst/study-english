@@ -1,26 +1,23 @@
 import styled from "styled-components";
 
-import RobotoBold from "../../assets/fonts/roboto/Roboto-Bold.ttf";
+// import RobotoBold from "../../assets/fonts/roboto/Roboto-Bold.ttf";
 import { devicesMax } from "../../Materials/responsive/responsive";
 
-const bgColor = "#010101";
+const bgColor = "#1e2359";
 const borderRadius = "6px";
 
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  background-color: white;
+  /* background-color: white; */
   display: inline-block;
   overflow: auto;
   text-align: start;
   padding: 10px 0 20px 0;
+  color: white;
 `;
 
 export const Title = styled.div`
-  @font-face {
-    font-family: roboto;
-    src: url(${RobotoBold});
-  }
   width: 90%;
   height: 55px;
   background-color: ${bgColor};
@@ -30,9 +27,10 @@ export const Title = styled.div`
   display: flex;
   align-items: center;
   font-size: 33px;
-  font-family: roboto;
+  opacity: 75%;
   padding-left: 30px;
 
+  opacity: 75%;
   @media screen and (${devicesMax.tablet}) {
     font-size: 18px;
     padding: 10px 15px;
@@ -43,11 +41,12 @@ export const Title = styled.div`
 export const Description = styled.div`
   width: 90%;
   height: fit-content;
-  background-color: white;
+  background-color: ${bgColor};
+  opacity: 75%;
   margin: auto;
   border-radius: ${borderRadius};
   padding: 10px;
-  color: #010101;
+  color: white;
   font-size: 20px;
   border: 1px solid gray;
   p {
@@ -80,6 +79,29 @@ export const Test = styled.div`
   background-color: ${bgColor};
   border-radius: ${borderRadius};
   padding: 15px;
+  opacity: 75%;
+  .mistakes {
+    font-size: 20px;
+    .cont {
+      /* background-color: white; */
+      margin: 3px 0;
+      h4 {
+        /* background-color: green; */
+        padding: 0 10px;
+      }
+      p {
+        /* background-color: red; */
+        width: fit-content;
+        padding: 2px 15px;
+      }
+      .uA{
+       color: red;
+      }
+      .cA{
+    color: green;
+      }
+    }
+  }
   .score {
     width: 100%;
     text-align: center;
@@ -93,6 +115,7 @@ export const Test = styled.div`
       font-size: 20px;
     }
   }
+
   .questions {
     width: 100%;
     padding: 10px 5px;
@@ -127,9 +150,19 @@ export const Test = styled.div`
         transition: 0.3s;
 
         :hover {
-          border-bottom: 2px solid red;
+          opacity: 50%;
         }
       }
     }
+  }
+
+  .restartBtn{
+    background-color: lightgreen;
+    color: black;
+    padding: 4px 6px;
+    font-size: 18px;
+    border: none;
+    border-radius: ${borderRadius};
+   margin: 10px 20px;
   }
 `;

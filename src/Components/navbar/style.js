@@ -1,121 +1,113 @@
 import styled from "styled-components";
 import { devicesMax, devicesMin } from "../../Materials/responsive/responsive";
-
-
-
-
-
+// import schoolbell from "../../assets/fonts/Scoolbell/Schoolbell-Regular.ttf"
+import comforta from "../../assets/fonts/comforta/static/Comfortaa-Bold.ttf";
 export const Container = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #01081a;
 
-width: 100% ;
-height: 100% ;
-padding: 0 40px ;
-display: flex ;
-align-items: center ;
-justify-content: space-between ;
-background-color: white;
-.logo-border{
-    width: 200px;
+  .logo-border {
+    width: 15%;
     height: 100%;
     display: flex;
     overflow: hidden;
     align-items: center;
     justify-content: center;
-}
-.logo{
-width: 250px;
-
-}
-.links{
     @media screen and (${devicesMax.tablet}) {
-        display: none;
+     width: 40% ;
     }
-}
-
-ul{
-
-    display: flex ;
-    gap: 30px ;
-    list-style: none ;
-    height: fit-content ;
-    
-    li{
-    padding: 4px 8px ;
-    border-radius: 3px ;
-    transition: .6s ;
-    &:hover{
-
-    background-color: black ;
-  
-   }
- &:hover a{
-    color: white;
- }
- a{
-    
-    color: black;
-    font-size: 18px;
-    transition: .6s;
-    @media (${devicesMin.tablet}) and (${devicesMax.laptop}) {
-        font-size: 17px;
+  }
+  .logo {
+    width: 100%;
+  }
+  .links {
+    @media screen and (${devicesMax.tablet}) {
+      display: none;
     }
-    
-}
-}
-}
-.openBtn{
+  }
+
+  ul {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 30px; */
+    list-style: none;
+    height: fit-content;
+
+    li {
+      padding: 4px 8px;
+      border-radius: 3px;
+      transition: 0.6s;
+      &:hover {
+        background-color: white;
+      }
+      &:hover a {
+        color: black;
+      }
+      a {
+        color: white;
+        font-size: 30px;
+        transition: 0.6s;
+        @media (${devicesMin.tablet}) and (${devicesMax.laptop}) {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  .openBtn {
     @media (${devicesMin.tablet}) and (${devicesMax.desktop}) {
-        display: none;
+      display: none;
     }
-}
+  }
 
-.slogan{
-    font-size: 30px;
+  .slogan {
+  
+    text-align: center;
+    font-size: 25px;
     font-weight: 300;
-    background-color: black;
+    font-family: ${comforta};
+    /* background-color: red; */
     color: white;
-    padding: 5px 10px ;
+    padding: 5px 10px;
     border-radius: 3px;
+    width: 15%;
+    text-align: center;
     @media (${devicesMin.tablet}) and (${devicesMax.laptop}) {
-        font-size: 20px;
+      font-size: 20px;
     }
     @media screen and (${devicesMax.tablet}) {
-        display: none;
+      display: none;
     }
-}
-
-
-`
+  }
+`;
 
 export const LinksResponsive = styled.ul`
+  list-style: none;
+  height: fit-content;
 
-   
-    list-style: none ;
-    height: fit-content ;
-
-   
-    li{
-    padding: 4px 8px ;
-    border-radius: 3px ;
-    transition: .6s ;
+  li {
+    padding: 4px 8px;
+    border-radius: 3px;
+    transition: 0.6s;
     margin: 4px 0;
-    &:hover{
-
-    background-color: black ;
-  
-   }
- &:hover a{
-    color: white;
- }
- a{
-    
-    color: black;
-    font-size: 18px;
-    transition: .6s;
-    @media (${devicesMin.tablet}) and (${devicesMax.laptop}) {
-        font-size: 15px;
+    &:hover {
+      background-color: black;
     }
-    
-}
-}
-`
+    &:hover a {
+      color: white;
+    }
+    a {
+      color: black;
+      font-size: 18px;
+      transition: 0.6s;
+      @media (${devicesMin.tablet}) and (${devicesMax.laptop}) {
+        font-size: 15px;
+      }
+    }
+  }
+`;

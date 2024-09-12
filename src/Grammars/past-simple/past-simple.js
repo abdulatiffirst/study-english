@@ -8,21 +8,45 @@ function PastSimple() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
-  
+  const [mistakes, setMistakes] = useState([]); // new state to store mistakes
+  const [userAnswers, setUserAnswers] = useState([]); // new state to store user answers
+  const [testCompleted, setTestCompleted] = useState(false); // new state to track test completion
 
-// restart button 
+  // restart button
 
-
-  const answerButton = (isCorrect) => {
+  const answerButton = (isCorrect, questionText, userAnswer) => {
     if (isCorrect === true) {
       setScore(score + 1);
+    } else {
+      // store mistake
+      setMistakes((prevMistakes) => [
+        ...prevMistakes,
+        { questionText, userAnswer },
+      ]);
     }
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);
+      setTestCompleted(true);
+      console.log("Test completed:", testCompleted); // Add this line
     }
+    // store user answer
+    setUserAnswers((prevUserAnswers) => [
+      ...prevUserAnswers,
+      { questionText, userAnswer },
+    ]);
+  };
+
+  const restartTest = () => {
+    console.log("Restart test button clicked!"); // Add this line
+    setTestCompleted(false);
+    setShowScore(false);
+    setScore(0);
+    setMistakes([]);
+    setUserAnswers([]);
+    setCurrentQuestion(0);
   };
 
   return (
@@ -108,8 +132,6 @@ function PastSimple() {
         </li>
       </Description>
 
-      
-
       <Title>Past simple questions and negatives</Title>
 
       <Description>
@@ -170,7 +192,13 @@ function PastSimple() {
                 {questions[currentQuestion].answerOptions.map(
                   (answerOption) => (
                     <button
-                      onClick={() => answerButton(answerOption.isCorrect)}
+                      onClick={() =>
+                        answerButton(
+                          answerOption.isCorrect,
+                          questions[currentQuestion].questionText,
+                          answerOption.answerText
+                        )
+                      }
                     >
                       {answerOption.answerText}
                     </button>
@@ -179,10 +207,44 @@ function PastSimple() {
               </div>
             </div>
           </>
-          
         )}
-                   
-
+        {showScore && mistakes.length > 0 && (
+          <div className="mistakes">
+            <h2>Mistakes:</h2>
+            <ul>
+              {mistakes.map((mistake, index) => (
+                <div className="cont" key={index}>
+                  <h4>{index + 1}:</h4>
+                  <p>Question: {mistake.questionText}</p>
+                  <p className="uA">Your answer: {mistake.userAnswer}</p>
+                  <p className="cA">
+                    Correct answer:{" "}
+                    {
+                      questions.find(
+                        (q) => q.questionText === mistake.questionText
+                      ).correctAnswer
+                    }
+                  </p>
+                </div>
+              ))}
+            </ul>
+          </div>
+        )}
+        {/* {showScore && (
+          <div className="correctAnswers">
+            <h2>Correct Answers:</h2>
+            <ul>
+              {questions.map((question, index) => (
+                <li key={index}>
+                  Question: {question.questionText}
+                  <br />
+                  Correct answer: {question.correctAnswer}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )} */}
+        {testCompleted && <button className="restartBtn" onClick={restartTest}>Restart Test</button>}
       </Test>
     </Container>
   );

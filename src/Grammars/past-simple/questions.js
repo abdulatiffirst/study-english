@@ -6,7 +6,8 @@ export const questions = [
         { answerText: "goed", isCorrect: false },
         { answerText: "gone", isCorrect: false },
         { answerText: "wented", isCorrect: false },
-      ],
+    ],
+    correctAnswer: "went",
     },
     {
       questionText: "He ____ a doctor year ago",
@@ -16,6 +17,7 @@ export const questions = [
         { answerText: "was", isCorrect: true },
         { answerText: "is", isCorrect: false },
       ],
+      correctAnswer: "was",
     },
     {
       questionText: "The film was boring. I ___ it.",
@@ -24,6 +26,7 @@ export const questions = [
         { answerText: "didn’t enjoy", isCorrect: true },
         { answerText: "enjoy", isCorrect: false },
       ],
+      correctAnswer: "didn't enjoy",
     },
     {
       questionText: "My grandfather ___ violin very well when he was young.",
@@ -32,6 +35,7 @@ export const questions = [
         { answerText: "can play", isCorrect: false },
         { answerText: "could play", isCorrect: true },
       ],
+      correctAnswer: "could play",
     },
     {
       questionText: "Nobody ___ while we were having dinner.",
@@ -40,39 +44,44 @@ export const questions = [
         { answerText: "did call", isCorrect: false },
         { answerText: "called", isCorrect: true },
       ],
+      correctAnswer: "called",
     },
     {
       questionText: "___ any museums when you were in England?",
       answerOptions: [
-        { answerText: "did you visit", isCorrect: true },
-        { answerText: "did you visited", isCorrect: false },
-        { answerText: "you visited", isCorrect: false },
+        { answerText: "Did you visit", isCorrect: true },
+        { answerText: "Did you visited", isCorrect: false },
+        { answerText: "You visit", isCorrect: false },
       ],
+      correctAnswer: "Did you visit",
     },
     {
       questionText: "___ a new TV program yesterday?",
       answerOptions: [
-        { answerText: "did you watched", isCorrect: false },
-        { answerText: "did you watch", isCorrect: true },
-        { answerText: "you watched", isCorrect: false },
+        { answerText: "Did you watched", isCorrect: false },
+        { answerText: "Did you watch", isCorrect: true },
+        { answerText: "You watched", isCorrect: false },
       ],
+      correctAnswer: "Did you watch",
     },
     
     {
       questionText: "I ___ when I was getting off the bus",
       answerOptions: [
-        { answerText: "sliped", isCorrect: true },
+        { answerText: "slept", isCorrect: true },
         { answerText: "slipped", isCorrect: false },
         { answerText: "did slip", isCorrect: false },
       ],
+      correctAnswer: "slept",
     },
     {
       questionText: "When ___ your new garage?",
       answerOptions: [
-        { answerText: "did you built", isCorrect: false },
-        { answerText: "did you build", isCorrect: true },
-        { answerText: "you built", isCorrect: false },
+        { answerText: "Did you built", isCorrect: false },
+        { answerText: "Did you build", isCorrect: true },
+        { answerText: "You built", isCorrect: false },
       ],
+      correctAnswer: "Did you built",
     },
     
    

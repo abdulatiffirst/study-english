@@ -5,7 +5,7 @@ function SpeakingPage() {
   return (
     <>
     <Container>
-        <h1>Coming Soon !</h1>
+        
     </Container>
     </>
   )
